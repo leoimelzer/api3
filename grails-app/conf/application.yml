@@ -99,6 +99,7 @@ dataSource:
     driverClassName: org.h2.Driver
     username: sa
     password: ''
+    logSql: true
 
 environments:
     development:
@@ -134,3 +135,16 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
+api2:
+    baseUrl: "http://localhost:8080/api2"
+    endpoint:
+        cidade: '/cidade'
+        funcionario: '/funcionario'
+        reajusteSalario: '/reajusteSalario'
+    action:
+        get: '/get'
+        list: '/list'
+        save: '/save'
+        update: '/update'
+        delete: '/delete'
